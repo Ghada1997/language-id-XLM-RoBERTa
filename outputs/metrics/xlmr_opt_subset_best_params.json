@@ -1,0 +1,15 @@
+{
+  "study": "xlmr_opt_subset",
+  "best_value": null,
+  "best_params": {
+    "learning_rate": null,
+    "per_device_train_batch_size": null,
+    "num_train_epochs": null,
+    "weight_decay": null,
+    "warmup_ratio": null
+  },
+  "n_trials": 20,
+  "model_name": "xlm-roberta-base",
+  
+  "info": "Placeholders only. Exact best params withheld. Run Optuna from tune.py to obtain best parameters."
+}

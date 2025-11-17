@@ -1,0 +1,19 @@
+
+# Core NLP / ML
+transformers>=4.56.0
+datasets>=4.0.0
+evaluate>=0.4         # Hugging Face metrics lib
+optuna>=3.6           # Hyperparameter tuning
+accelerate>=0.31      # Training acceleration
+scikit-learn>=1.4
+sacremoses>=0.0.53
+torch>=2.2            # Ensure compatibility
+
+# EDA & plotting
+matplotlib>=3.8
+seaborn>=0.13
+pandas>=2.2
+numpy>=1.26
+
+# Utils
+tqdm>=4.66
