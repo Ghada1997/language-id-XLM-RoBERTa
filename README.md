@@ -26,28 +26,27 @@ We then compare a **transformer-based model (XLM-RoBERTa)** against a **traditio
   - The repository includes the Optuna tuning pipeline and parameter schema. All **best_params.json** files contains placeholder keys only; exact tuned values are withheld to preserve research integrity.
 
 ---
-
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
 language-id/
-├─ README.md # Project description and usage notes
-├─ requirements.txt # Python dependencies
-├─ notebooks/
-│ └─ project_report.ipynb # End-to-end workflow: EDA, preprocessing, training, evaluation, commenting on performance
-├─ src/
-│ └─ language_id/
-│   ├─ ___init___.py
-│   ├─ utils.py # Utility functions (set_seed, save/load JSON)
-│   ├─ data.py # Load WiLI, train/val/test splits, stratified subsets
-│   ├─ preprocess.py # Minimal whitespace normalization; tokenization
-│   ├─ model.py # Model factory for XLM-R / mBERT
-│   ├─ metrics.py # computing Accuracy, macro/weighted F1, precision, recall
-│   ├─ tune.py # Optuna hyperparameter tuning (on subsets)
-│   └─ train.py # Final training & evaluation with best parameters
-├─ outputs/ # Generated artifacts (gitignored)
-│ └─ metrics/ # JSONs, learning curves, best_params.json, validation.json and evaluation.json
-└─ .gitignore
+├── README.md                # Project description and usage notes
+├── requirements.txt         # Python dependencies
+├── notebooks/
+│   └── project_report.ipynb # End-to-end workflow: EDA, preprocessing, training, evaluation, analyzing on performance
+├── src/
+│   └── language_id/
+│       ├── __init__.py
+│       ├── utils.py         # Utility functions (set_seed, save/load JSON)
+│       ├── data.py          # Load WiLI, train/val/test splits, stratified subsets
+│       ├── preprocess.py    # Minimal Whitespace Normalization & Tokenization
+│       ├── model.py         # Model factory for XLM-R
+│       ├── metrics.py       # Computing Accuracy, macro/weighted F1, precision, recall
+│       ├── tune.py          # Optuna hyperparameter tuning (on subsets)
+│       └── train.py         # Final training & evaluation with best parameters
+├── outputs/                 # Generated artifacts
+│   └── metrics/             #  JSON metrics, learning curves, best_params.json, validation.json and evaluation.json placeholders, etc.
+└── .gitignore
 
 
 ---
