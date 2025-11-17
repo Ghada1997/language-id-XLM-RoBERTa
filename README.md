@@ -45,7 +45,7 @@ language-id/
 │       ├── tune.py          # Optuna hyperparameter tuning (on subsets)
 │       └── train.py         # Final training & evaluation with best parameters
 ├── outputs/                 # Generated artifacts
-│   └── metrics/             #  JSON metrics, learning curves, best_params.json, validation.json and evaluation.json placeholders, etc.
+│   └── metrics/             # JSON metrics, learning curves, best_params.json, validation.json and evaluation.json placeholders, etc.
 └── .gitignore
 
 ```
