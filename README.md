@@ -29,6 +29,7 @@ We then compare a **transformer-based model (XLM-RoBERTa)** against a **traditio
 
 ## 📂 Project Structure
 
+```text
 language-id/
 ├─ README.md # Project description and usage notes
 ├─ requirements.txt # Python dependencies
